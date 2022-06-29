@@ -14,6 +14,7 @@ struct ContentView: View {
     @State var showGuideView = false
     @State var showInfoView = false
     @State private var lastCardIndex = 1
+    @State private var cardRemovalTransition = AnyTransition.trailingBottom
     @GestureState private var dragState = DragState.inactive
     
     private var dragAreaThreshold: CGFloat = 65.0
@@ -152,6 +153,19 @@ struct ContentView: View {
                                         break
                                     }
                                 })
+                                .onChanged({ (value) in
+                                    guard case .second(true, let drag?) = value else {
+                                        return
+                                    }
+                                    
+                                    if drag.translation.width < -self.dragAreaThreshold {
+                                        self.cardRemovalTransition = .leadingBottom
+                                    }
+                                    
+                                    if drag.translation.width > self.dragAreaThreshold {
+                                        self.cardRemovalTransition = .trailingBottom
+                                    }
+                                })
                                 .onEnded({ (value) in
                                     guard case .second(true, let drag?) = value else {
                                         return
@@ -162,6 +176,7 @@ struct ContentView: View {
                                     }
                                 })
                         )
+                        .transition(self.cardRemovalTransition)
                 }
             }
             .padding(.horizontal)

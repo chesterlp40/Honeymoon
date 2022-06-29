@@ -11,6 +11,7 @@
 		8658C7EB286CC63B00B137C5 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658C7EA286CC63B00B137C5 /* TitleModifier.swift */; };
 		8658C7EE286CC9C500B137C5 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658C7ED286CC9C500B137C5 /* ButtonModifier.swift */; };
 		8658C7F0286CFED900B137C5 /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658C7EF286CFED900B137C5 /* SymbolModifier.swift */; };
+		8658C7F3286D06E400B137C5 /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658C7F2286D06E400B137C5 /* CardTransition.swift */; };
 		86C4508D286BF9FB00170D78 /* HoneymoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4508C286BF9FB00170D78 /* HoneymoonApp.swift */; };
 		86C4508F286BF9FB00170D78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4508E286BF9FB00170D78 /* ContentView.swift */; };
 		86C45091286BF9FD00170D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C45090286BF9FD00170D78 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		8658C7EA286CC63B00B137C5 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
 		8658C7ED286CC9C500B137C5 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 		8658C7EF286CFED900B137C5 /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
+		8658C7F2286D06E400B137C5 /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
 		86C45089286BF9FB00170D78 /* Honeymoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honeymoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C4508C286BF9FB00170D78 /* HoneymoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonApp.swift; sourceTree = "<group>"; };
 		86C4508E286BF9FB00170D78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 			path = Modifier;
 			sourceTree = "<group>";
 		};
+		8658C7F1286D06C500B137C5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8658C7F2286D06E400B137C5 /* CardTransition.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		86C45080286BF9FB00170D78 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 		86C4508B286BF9FB00170D78 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				8658C7F1286D06C500B137C5 /* Extension */,
 				8658C7EC286CC64100B137C5 /* Modifier */,
 				86C450AC286C0DDA00170D78 /* Component */,
 				86C4509E286BFF5900170D78 /* Info.plist */,
@@ -227,6 +238,7 @@
 				8658C7E9286CC52000B137C5 /* InfoView.swift in Sources */,
 				86C450AB286C0B7000170D78 /* FooterView.swift in Sources */,
 				8658C7EB286CC63B00B137C5 /* TitleModifier.swift in Sources */,
+				8658C7F3286D06E400B137C5 /* CardTransition.swift in Sources */,
 				8658C7F0286CFED900B137C5 /* SymbolModifier.swift in Sources */,
 				86C450A9286C083200170D78 /* HeaderView.swift in Sources */,
 				86C450A0286C012800170D78 /* HoneymoonModel.swift in Sources */,
