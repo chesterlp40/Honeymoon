@@ -8,12 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    // MARK: - PROPERTIES
+    
+    // MARK: - BODY
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            HeaderView()
+            
+            Spacer()
+            
+            CardView(destination: honeymoonData[3])
+                .padding()
+            
+            Spacer()
+        }
     }
 }
 
+// MARK: - PREVIEW
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
