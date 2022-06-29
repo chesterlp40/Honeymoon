@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct CardView: View, Identifiable {
     // MARK: - PROPERTIES
     
     let id = UUID()
@@ -60,7 +60,7 @@ struct CardView: View {
 // MARK: - PREVIEW
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(destination: honeymoonData[1])
+        CardView(destination: honeymoonData[0])
             .previewLayout(
                 .fixed(
                     width: 375,
