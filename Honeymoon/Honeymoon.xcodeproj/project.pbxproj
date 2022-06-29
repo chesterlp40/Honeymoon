@@ -17,6 +17,7 @@
 		86C450A4286C01BC00170D78 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C450A3286C01BC00170D78 /* HoneymoonData.swift */; };
 		86C450A7286C026D00170D78 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C450A6286C026D00170D78 /* CardView.swift */; };
 		86C450A9286C083200170D78 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C450A8286C083200170D78 /* HeaderView.swift */; };
+		86C450AB286C0B7000170D78 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C450AA286C0B7000170D78 /* FooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		86C450A3286C01BC00170D78 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
 		86C450A6286C026D00170D78 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		86C450A8286C083200170D78 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		86C450AA286C0B7000170D78 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				86C4508E286BF9FB00170D78 /* ContentView.swift */,
 				86C450A6286C026D00170D78 /* CardView.swift */,
 				86C450A8286C083200170D78 /* HeaderView.swift */,
+				86C450AA286C0B7000170D78 /* FooterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86C450A4286C01BC00170D78 /* HoneymoonData.swift in Sources */,
+				86C450AB286C0B7000170D78 /* FooterView.swift in Sources */,
 				86C450A9286C083200170D78 /* HeaderView.swift in Sources */,
 				86C450A0286C012800170D78 /* HoneymoonModel.swift in Sources */,
 				86C4508F286BF9FB00170D78 /* ContentView.swift in Sources */,
